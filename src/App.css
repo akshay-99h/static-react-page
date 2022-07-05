@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+@import url('https://rsms.me/inter/inter.css');
+
+html {
+    font-family: 'Inter', sans-serif;
+    color: #ddd;
+    background-color: #282D35;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    margin: 0;
+    padding: 0;
+    /* background-image: url(./images/react-icon-large.png);
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-position-y: 75%; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@supports (font-variation-settings: normal) {
+    html {
+        font-family: 'Inter var', sans-serif;
+    }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.main-content {
+    padding:20px;
+    display: inline;
+    margin-left: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+ul[class="blue-bullet"] {
+    /* list-style-type: circle; */
+    padding-left: 2%;
+    /* color: #000; */
+    /* color: rgb(0, 128, 255); */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#nav-list > li{
+    display: inline;
+    /* display:flex;
+    align-items: center;
+    justify-content: center; */
+    list-style-type: none;
+    padding: 10px;
+    color: #DEEBF8;
+    font-weight: 600;
+}
+
+h1{
+    margin-left: 20px;
+}
+
+.navbar{
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #292323b1;
+    color: beige;
+    padding: 0 20px;
+    height: 60px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2); */
+    display: flex;
+    align-items: center;
+    background-color: #21222A;
+    height: 90px;
+    padding: 30px 25px;
+}
+
+.navbar>h3{
+    color: #61DAFB;
+    font-size: 22px;
+    margin-right: auto;
+}
+
+.logo{
+   height: 40px; 
+}
+/* 
+#nav-list:first-child {
+    border-bottom: 10px solid rgb(214, 210, 210);
+} */
+
+.blue-bullet {
+    background-color: #282D35;
+    max-width: 400px;
+    transform: translateX(20px);
+    margin: 0 20px;
+}
+
+.blue-bullet > li{
+    line-height: 19px;
+    padding-block: 10px;
+}
+
+.blue-bullet > li::marker {
+    color: #61DAFB;
+    font-size: 1.4rem;
+}
+
+.logoInBg{
+    display: inline;
+    position: absolute;
+    max-height: 600px;
+    top: 50%;
+    left: 100%;
+    position: relative;
+    transform: translate(-100%, -50%);
 }
